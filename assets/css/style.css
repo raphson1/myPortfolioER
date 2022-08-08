@@ -4,6 +4,12 @@
     box-sizing: content-box;
 }
 
+:root{
+    --main_color: black;
+    --second_color: white;
+    --border_size: var(--border_size);
+
+}
 h2 {
     font-size: 30px;
 
@@ -17,14 +23,14 @@ body .nav{
    display: flex;
    flex-direction: row;
    justify-content: space-between;
-   background-color: black;
+   background-color: var(--main_color);
    height: 100px;
    width: 100%;
-   color: white;
+   color: var(--second_color);
 }
 body .nav a{
     text-decoration: none;
-    color: white;
+    color: var(--second_color);
     margin-left: 3px;
 }
 
@@ -72,21 +78,26 @@ main .projects {
     flex: 1 0 0;
     flex-direction: row;
     padding: 10px;
-    margin: 5px;
+    margin: 10px;
     text-align: center;
     border-style: solid;
-    border-width: 1px;
+    border-width: var(--border_size);
+  }
+
+  .card img:hover{
+    opacity: 100%;
   }
 
  .card img {
     width: 100%;
     min-width: 400px;
-    opacity: 50%;
+    opacity: 40%;
  }
  .card header {
-    padding: 20px;
+    padding: 15px;
     background: rgb(80, 79, 79);
     color: #fff;
+    font-weight: bolder;
   }
 
   .card a{
@@ -129,12 +140,14 @@ footer a {
 }
 
 a:hover {
-    color: rgb(80, 79, 79);
+    text-decoration: underline;
 }
 
 footer .contact{
     margin: 20px
 }
+
+/* for mobile phones */
 
 @media screen and (max-width: 768px) {
     body .nav {
@@ -179,6 +192,30 @@ footer .contact{
         border-style:dashed;
         border-width: 2px;
       }
+
+      footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    
+      }
+      footer a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 0px;
+        padding: 5px;
+      }
+      footer h2 {
+        margin-left: 0;
+        padding-right: 0;
+        border-right:none ;
+        color: white;
+      }
+      footer .contact {
+        margin: 10px;
+      }
+    
 }
 
 
