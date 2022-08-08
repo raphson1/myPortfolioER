@@ -8,17 +8,21 @@
     --main_color: black;
     --second_color: white;
     --border_size: var(--border_size);
-
+    --main-font : 'Inter', sans-serif;
 }
+
 h2 {
     font-size: 30px;
+    font-family: var(--main-font);
+   font-weight: bolder;
 
 }
+
 h1 {
     font-size: 40px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: var(--main-font);
+    font-family: 'Inter', sans-serif;
 }
-
 body .nav{
    display: flex;
    flex-direction: row;
@@ -31,7 +35,9 @@ body .nav{
 body .nav a{
     text-decoration: none;
     color: var(--second_color);
-    margin-left: 3px;
+    margin-left: var(--border_size);
+    font-family: var(--main-font)
+
 }
 
 body .nav .link{
@@ -51,6 +57,8 @@ main .aboutme {
 
 .aboutme .aboutme_paragraph {
     padding-left: 5px;
+    font-family: var(--main-font);
+    font-size: 20PX;
 }
 
 .aboutme h2 {
@@ -123,10 +131,12 @@ footer {
     padding-bottom: 30px;
     background-color: black;
     width: 100%;
+    font-family: var(--main-font)
+
 }
 
 footer h2 {
-    margin-left: 95px;
+    margin-left: 90px;
     padding-right: 20px;
     border-right:3px solid white ;
     color: white;
@@ -136,6 +146,7 @@ footer a {
     color: white;
     font-size: 20px;
     margin-right: 150px;
+    font-family: var(--main-font);
 
 }
 
@@ -197,6 +208,7 @@ footer .contact{
         display: flex;
         flex-direction: column;
         text-align: center;
+        font-family: 'Inter', sans-serif;
     
       }
       footer a {
