@@ -254,7 +254,7 @@ footer .contact{
     }
 
     .projects .project_card {
-        padding-left: 0px;
+        padding-right:5px;
         border-left: none
      }
      .card {
@@ -283,7 +283,7 @@ footer .contact{
         color: white;
       }
       footer .contact {
-        margin: 10px;
+        margin: 5px;
       }
 }
 
